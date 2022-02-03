@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/result" method="post" class="bg-dark text-warning p-5 m-3 rounded col-6 mx-auto">
+        <h1 class="text-warning">Dojo Survey</h1>
+        <div class="form-group mb-4 ">
+            <label class="form-group" for="name" >Name:</label>
+            <input type="text" name = "name" class = "form-control">
+        </div>
+        <div class="form-group mb-4">
+            <label class="form-group" for="location">Dojo Location:</label>
+            <select name="location"  class="form-control">
+                <option value="">--SELECT ONE--</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+            </select>
+        </div>
+        <div class="form-group mb-4">
+            <label for="language" class="form-group">Favorate Language:</label>
+            <select name="language"  class="form-control">
+                <option value="">--SELECT ONE--</option>
+                <option value="Chicago">Python</option>
+                <option value="Burbank">C#</option>
+                <option value="Seattle">Java</option>
+                <option value="Online">React</option>
+            </select>
+            
+        </div>
+        <div class="form-group mb-4 ">
+            <label for="comments" class="form-group">Comment(optional)</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" class="form-control"></textarea>
+            
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-warning d-flex justify-content-end">
+    </form> 
+</body>
+</html>
